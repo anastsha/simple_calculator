@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_ex1.css">
+    <title>document</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Calculator with text field</h1>
+    <p>
+        <i style="font-size:25px;">Note: Calculator works after imputing numbers, choosing calculation type (default is +) and pressing the button "="</i>
+    </p>
+    <div class="calculator">
+        <input type="text" name="num1" value="" id="num1" placeholder="Input number 1">
+        <select id="calc" name="calc">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <input type="text" name="num2" id="num2" value="" placeholder="Input number 2"> <br>
+        <button onclick="Result()" id="button">=</button>
+        <button onclick="Reset()" id="reset">AC</button>
+        <input type="text" value="" id="result" placeholder="Result">
+    </div>
+<script src="ex1.js"></script>
+</body>
+</html>
